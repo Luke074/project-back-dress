@@ -1,0 +1,82 @@
+$color-blue-dark: #102b3e;
+$color-gray-light: #ced8e1;
+$color-purple-light: #9295c8;
+$color-purple: #6964e2;
+$color-white: #fff;
+
+.container-slider {
+    width: 100%;
+    height: 60vh;
+    background-color: $color-blue-dark;
+    background-image: url('../../../assets/images/banner-midnight.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box-description {
+    width: inherit;
+    height: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: $color-white;
+    text-align: center;
+
+    button {
+        width: auto;
+        height: auto;
+        padding: 8px 25px;
+        border-radius: 12px;
+        border: none;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        cursor: pointer;
+        background-color: $color-purple;
+        color: $color-white;
+    }
+}
+
+.box-itens {
+    width: inherit;
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 60px;
+
+
+    >.cards {
+        width: 150px;
+        height: 100%;
+
+        padding: 0px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            border: solid 1px #000;
+            border-radius: 12px;
+            animation: 1.5s;
+        }
+
+        .details {
+            display: none;
+        }
+
+        :hover {
+
+            .details {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                z-index: 99;
+                background-color: $color-gray-light;
+                opacity: 0.5;
+            }
+        }
+
+    }
+}
